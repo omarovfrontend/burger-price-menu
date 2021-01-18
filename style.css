@@ -5,7 +5,9 @@
 }
 
 .wrapper {
-    padding: 10px;
+    padding: 20px;
+    background-color: #e5e6e7;
+    min-height: 100vh;
 }
 
 h1, h2, h3, p, hr {

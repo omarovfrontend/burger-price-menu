@@ -1,4 +1,8 @@
-document.querySelector('#result').onclick = getResult;
+const resultElement = document.querySelector('#result');
+
+resultElement.addEventListener('click', function() {
+    getResult();
+});
 
 // ф-я должна выводить результат и подсчитывать выбранные элементы
 function getResult() {
