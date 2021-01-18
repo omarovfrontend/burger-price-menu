@@ -1,18 +1,18 @@
-const resultElement = document.querySelector('#result');
+const resultBtn = document.querySelector('#result-btn');
+const menu = document.querySelectorAll('.menu');
 
-resultElement.addEventListener('click', function() {
+resultBtn.addEventListener('click', function() {
     getResult();
 });
 
 // ф-я должна выводить результат и подсчитывать выбранные элементы
 function getResult() {
-    const menu = document.getElementsByClassName('menu');
     let cost = 0;
     let kkal = 0;
     for(let i = 0; i < menu.length; i++) {
         if (menu[i].checked) {
-            cost += parseFloat(menu[i].getAttribute('data-cost'));
-            kkal += parseFloat(menu[i].getAttribute('data-kkal'));
+            cost += Number(menu[i].getAttribute('data-cost'));
+            kkal += Number(menu[i].getAttribute('data-kkal'));
         }
     }
     document.querySelector('#cost').innerHTML = cost;

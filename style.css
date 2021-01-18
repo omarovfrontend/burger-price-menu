@@ -10,15 +10,19 @@
     min-height: 100vh;
 }
 
-h1, h2, h3, p, hr {
+h1, h2, h3, label, p, hr {
     margin-bottom: 10px;
+}
+
+label {
+    display: block;
 }
 
 .menu {
     margin-right: 10px;
 }
 
-#result {
+#result-btn {
     padding: 5px;
     cursor: pointer;
 }
